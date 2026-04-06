@@ -1,0 +1,15 @@
+{
+  "name": "smart-transport-system",
+  "version": "1.0.0",
+  "description": "Smart Public Transport Monitoring System - MERN Stack",
+  "scripts": {
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "dev": "concurrently --kill-others-on-fail \"cd server && npm run dev\" \"cd client && npm start\"",
+    "start": "cd server && node index.js",
+    "seed": "cd server && node utils/seedData.js",
+    "build": "cd client && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
